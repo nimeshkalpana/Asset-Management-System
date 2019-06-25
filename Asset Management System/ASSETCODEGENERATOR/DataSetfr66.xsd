@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetfr66" targetNamespace="http://tempuri.org/DataSetfr66.xsd" xmlns:mstns="http://tempuri.org/DataSetfr66.xsd" xmlns="http://tempuri.org/DataSetfr66.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetfr66" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetfr66" msprop:Generator_UserDSName="DataSetfr66">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Asset_x0020_Category" msprop:Generator_ColumnVarNameInTable="columnAsset_Category" msprop:Generator_ColumnPropNameInRow="Asset_Category" msprop:Generator_ColumnPropNameInTable="Asset_CategoryColumn" msprop:Generator_UserColumnName="Asset Category" type="xs:string" minOccurs="0" />
+              <xs:element name="Asset_x0020_Sub_x0020_Category" msprop:Generator_ColumnVarNameInTable="columnAsset_Sub_Category" msprop:Generator_ColumnPropNameInRow="Asset_Sub_Category" msprop:Generator_ColumnPropNameInTable="Asset_Sub_CategoryColumn" msprop:Generator_UserColumnName="Asset Sub Category" type="xs:string" minOccurs="0" />
+              <xs:element name="Location_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnLocation_Name" msprop:Generator_ColumnPropNameInRow="Location_Name" msprop:Generator_ColumnPropNameInTable="Location_NameColumn" msprop:Generator_UserColumnName="Location Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Division_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnDivision_Name" msprop:Generator_ColumnPropNameInRow="Division_Name" msprop:Generator_ColumnPropNameInTable="Division_NameColumn" msprop:Generator_UserColumnName="Division Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Balance_x0020_shown_x0020_per_x0020_ledger" msprop:Generator_ColumnVarNameInTable="columnBalance_shown_per_ledger" msprop:Generator_ColumnPropNameInRow="Balance_shown_per_ledger" msprop:Generator_ColumnPropNameInTable="Balance_shown_per_ledgerColumn" msprop:Generator_UserColumnName="Balance shown per ledger" type="xs:int" minOccurs="0" />
+              <xs:element name="Acctual_x0020_Balance_x0020_on_x0020_hand" msprop:Generator_ColumnVarNameInTable="columnAcctual_Balance_on_hand" msprop:Generator_ColumnPropNameInRow="Acctual_Balance_on_hand" msprop:Generator_ColumnPropNameInTable="Acctual_Balance_on_handColumn" msprop:Generator_UserColumnName="Acctual Balance on hand" type="xs:int" minOccurs="0" />
+              <xs:element name="Surplus" msprop:Generator_ColumnVarNameInTable="columnSurplus" msprop:Generator_ColumnPropNameInRow="Surplus" msprop:Generator_ColumnPropNameInTable="SurplusColumn" msprop:Generator_UserColumnName="Surplus" type="xs:string" minOccurs="0" />
+              <xs:element name="Deficiency" msprop:Generator_ColumnVarNameInTable="columnDeficiency" msprop:Generator_ColumnPropNameInRow="Deficiency" msprop:Generator_ColumnPropNameInTable="DeficiencyColumn" msprop:Generator_UserColumnName="Deficiency" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

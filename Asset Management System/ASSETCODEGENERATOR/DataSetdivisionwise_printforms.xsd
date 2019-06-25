@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetdivisionwise_printforms" targetNamespace="http://tempuri.org/DataSetdivisionwise_printforms.xsd" xmlns:mstns="http://tempuri.org/DataSetdivisionwise_printforms.xsd" xmlns="http://tempuri.org/DataSetdivisionwise_printforms.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetdivisionwise_printforms" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetdivisionwise_printforms" msprop:Generator_UserDSName="DataSetdivisionwise_printforms">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArticleName" msprop:Generator_ColumnVarNameInTable="columnArticleName" msprop:Generator_ColumnPropNameInRow="ArticleName" msprop:Generator_ColumnPropNameInTable="ArticleNameColumn" msprop:Generator_UserColumnName="ArticleName" type="xs:string" minOccurs="0" />
+              <xs:element name="SectionAndNumber" msprop:Generator_ColumnVarNameInTable="columnSectionAndNumber" msprop:Generator_ColumnPropNameInRow="SectionAndNumber" msprop:Generator_ColumnPropNameInTable="SectionAndNumberColumn" msprop:Generator_UserColumnName="SectionAndNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="BalanceAsShownPerLedger" msprop:Generator_ColumnVarNameInTable="columnBalanceAsShownPerLedger" msprop:Generator_ColumnPropNameInRow="BalanceAsShownPerLedger" msprop:Generator_ColumnPropNameInTable="BalanceAsShownPerLedgerColumn" msprop:Generator_UserColumnName="BalanceAsShownPerLedger" type="xs:int" minOccurs="0" />
+              <xs:element name="ActualBalanceOnHand" msprop:Generator_ColumnVarNameInTable="columnActualBalanceOnHand" msprop:Generator_ColumnPropNameInRow="ActualBalanceOnHand" msprop:Generator_ColumnPropNameInTable="ActualBalanceOnHandColumn" msprop:Generator_UserColumnName="ActualBalanceOnHand" type="xs:int" minOccurs="0" />
+              <xs:element name="Surplus" msprop:Generator_ColumnVarNameInTable="columnSurplus" msprop:Generator_ColumnPropNameInRow="Surplus" msprop:Generator_ColumnPropNameInTable="SurplusColumn" msprop:Generator_UserColumnName="Surplus" type="xs:string" minOccurs="0" />
+              <xs:element name="Deficiency" msprop:Generator_ColumnVarNameInTable="columnDeficiency" msprop:Generator_ColumnPropNameInRow="Deficiency" msprop:Generator_ColumnPropNameInTable="DeficiencyColumn" msprop:Generator_UserColumnName="Deficiency" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

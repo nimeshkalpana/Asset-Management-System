@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration>
+  
+  <appSettings>
+    
+    <add key="SharedPrinter" value="ZDesigner ZT230-200dpi ZPL (1)"/>
+    
+     <add key="ConnectionStirng" value=" Data Source=172.25.30.25;Initial Catalog=CARGO-TICKET-TESTING;User ID=Asset ;Password =Asset"/>
+     <add key ="AVPS" value ="0"/>
+    <add key ="DBConnectionString" value ="Data Source=GEETHIKA;Initial Catalog=Assets;Persist Security Info=True;User ID=Asset;Password=Asset"/>
+    <add key ="CSVPATH" value ="D:\\Generated_CSV_files\\"/>
+    <!--<add key ="DBConnectionString" value ="Data Source=attendance.airport.lk;Initial Catalog=Assets;User ID=Assets_Ministry;password=Assets_Ministry"/>-->
+  </appSettings>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>

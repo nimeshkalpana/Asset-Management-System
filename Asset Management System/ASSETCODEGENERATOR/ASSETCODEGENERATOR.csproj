@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5741913E-B6AA-43E6-90D9-05938CA51E11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASSETCODEGENERATOR</RootNamespace>
+    <AssemblyName>ASSETCODEGENERATOR</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>3EB33EC144D8037DC7E23FC35CE4FE394D47A2B7</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ASSETCODEGENERATOR_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>MAMApp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUserform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserform.Designer.cs">
+      <DependentUpon>AddUserform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseEngine.cs" />
+    <Compile Include="DataSet66.cs">
+      <DependentUpon>DataSet66.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet66.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet66.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetdivisionwise_printforms.cs">
+      <DependentUpon>DataSetdivisionwise_printforms.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetdivisionwise_printforms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetdivisionwise_printforms.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetfr66.cs">
+      <DependentUpon>DataSetfr66.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetfr66.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetfr66.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="DivisionITds.cs">
+      <DependentUpon>DivisionITds.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DivisionITds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DivisionITds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsDivisionHR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsDivisionHR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsVehicle.cs">
+      <DependentUpon>dsVehicle.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsVehicle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVehicle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formdivisionwise_printforms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdivisionwise_printforms.Designer.cs">
+      <DependentUpon>Formdivisionwise_printforms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formreport222222.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formreport222222.Designer.cs">
+      <DependentUpon>Formreport222222.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssetCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssetCategory.designer.cs">
+      <DependentUpon>frmAssetCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssetSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssetSubCategory.designer.cs">
+      <DependentUpon>frmAssetSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssetTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssetTransfer.designer.cs">
+      <DependentUpon>FrmAssetTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssetVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssetVerification.designer.cs">
+      <DependentUpon>FrmAssetVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAssignAssets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssignAssets.Designer.cs">
+      <DependentUpon>frmAssignAssets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasterData.Designer.cs">
+      <DependentUpon>FrmMasterData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDelete_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDelete_Data.Designer.cs">
+      <DependentUpon>FrmDelete_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdivision.designer.cs">
+      <DependentUpon>frmdivision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDivisionIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDivisionIT.Designer.cs">
+      <DependentUpon>FrmDivisionIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmfr66Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmfr66Report.Designer.cs">
+      <DependentUpon>Frmfr66Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocation.designer.cs">
+      <DependentUpon>frmLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmreports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmreports.Designer.cs">
+      <DependentUpon>Frmreports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystem.Designer.cs">
+      <DependentUpon>FrmSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpload_csv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpload_csv.Designer.cs">
+      <DependentUpon>FrmUpload_csv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Csv_Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Csv_Generator.designer.cs">
+      <DependentUpon>Frm_Csv_Generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_CodeForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item_CodeForm2.designer.cs">
+      <DependentUpon>Item_CodeForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListItem.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PODetailsForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PODetailsForm2.Designer.cs">
+      <DependentUpon>PODetailsForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="VehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleForm.Designer.cs">
+      <DependentUpon>VehicleForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddUserform.resx">
+      <DependentUpon>AddUserform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\VehicleDetails.rdlc" />
+    <EmbeddedResource Include="Formdivisionwise_printforms.resx">
+      <DependentUpon>Formdivisionwise_printforms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formreport222222.resx">
+      <DependentUpon>Formreport222222.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAssetCategory.resx">
+      <DependentUpon>frmAssetCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAssetSubCategory.resx">
+      <DependentUpon>frmAssetSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssetTransfer.resx">
+      <DependentUpon>FrmAssetTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAssetVerification.resx">
+      <DependentUpon>FrmAssetVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAssignAssets.resx">
+      <DependentUpon>frmAssignAssets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasterData.resx">
+      <DependentUpon>FrmMasterData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDelete_Data.resx">
+      <DependentUpon>FrmDelete_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdivision.resx">
+      <DependentUpon>frmdivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDivisionIT.resx">
+      <DependentUpon>FrmDivisionIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmfr66Report.resx">
+      <DependentUpon>Frmfr66Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocation.resx">
+      <DependentUpon>frmLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmreports.resx">
+      <DependentUpon>Frmreports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystem.resx">
+      <DependentUpon>FrmSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpload_csv.resx">
+      <DependentUpon>FrmUpload_csv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Csv_Generator.resx">
+      <DependentUpon>Frm_Csv_Generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_CodeForm2.resx">
+      <DependentUpon>Item_CodeForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PODetailsForm2.resx">
+      <DependentUpon>PODetailsForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="bin\Debug\rptVehicle.rdlc" />
+    <EmbeddedResource Include="bin\Debug\ReportDivisionIT.rdlc" />
+    <EmbeddedResource Include="bin\Debug\Reportdivisionwise_printforms.rdlc" />
+    <EmbeddedResource Include="ReportHR.rdlc" />
+    <EmbeddedResource Include="bin\Debug\rptAnnualReport.rdlc" />
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleDetails.rdlc" />
+    <EmbeddedResource Include="VehicleForm.resx">
+      <DependentUpon>VehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ASSETCODEGENERATOR_TemporaryKey.pfx" />
+    <None Include="DataSet66.xsc">
+      <DependentUpon>DataSet66.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet66.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet66.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet66.xss">
+      <DependentUpon>DataSet66.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetdivisionwise_printforms.xsc">
+      <DependentUpon>DataSetdivisionwise_printforms.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetdivisionwise_printforms.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetdivisionwise_printforms.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetdivisionwise_printforms.xss">
+      <DependentUpon>DataSetdivisionwise_printforms.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetfr66.xsc">
+      <DependentUpon>DataSetfr66.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetfr66.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetfr66.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetfr66.xss">
+      <DependentUpon>DataSetfr66.xsd</DependentUpon>
+    </None>
+    <None Include="DivisionITds.xsc">
+      <DependentUpon>DivisionITds.xsd</DependentUpon>
+    </None>
+    <None Include="DivisionITds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DivisionITds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DivisionITds.xss">
+      <DependentUpon>DivisionITds.xsd</DependentUpon>
+    </None>
+    <None Include="DsDivisionHR.xsc">
+      <DependentUpon>DsDivisionHR.xsd</DependentUpon>
+    </None>
+    <None Include="DsDivisionHR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsDivisionHR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DsDivisionHR.xss">
+      <DependentUpon>DsDivisionHR.xsd</DependentUpon>
+    </None>
+    <None Include="dsVehicle.xsc">
+      <DependentUpon>dsVehicle.xsd</DependentUpon>
+    </None>
+    <None Include="dsVehicle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVehicle.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsVehicle.xss">
+      <DependentUpon>dsVehicle.xsd</DependentUpon>
+    </None>
+    <None Include="PRINT.prn" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RawPrinterHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
